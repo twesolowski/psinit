@@ -1,4 +1,4 @@
-# psinit
+# PSInit
 Download and install PrestaShop
 
 #Requirements
