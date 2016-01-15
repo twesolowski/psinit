@@ -1,5 +1,5 @@
 # PSInit
-Download and install PrestaShop.
+Download and install PrestaShop with one command
 Automate PrestaShop installation.
 
 #Requirements
