@@ -1,5 +1,6 @@
 # PSInit
-Download and install PrestaShop
+Download and install PrestaShop.
+Automate PrestaShop installation.
 
 #Requirements
 1. wget
