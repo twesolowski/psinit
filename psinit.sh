@@ -1,5 +1,4 @@
 #! /bin/bash
-
 PSVERSION="1.6.1.4"
 ZIPFILE=prestashop_$PSVERSION.zip
 ZIPURL=https://www.prestashop.com/download/old/$ZIPFILE
@@ -50,5 +49,6 @@ cat $CONFFILE | xargs  php ./install/index_cli.php
 
 echo "Clearing"
 rm -fr ./$PSDIR
+rm -fr ./install
 rm -f $ZIPFILE
 
