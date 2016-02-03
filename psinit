@@ -43,7 +43,7 @@ fi
 
 if [ -d "$PSDIR" ]; then
     echo "Moving files from directory $PSDIR"
-    mv -f -u $PSDIR/* .
+    cp -r $PSDIR/* .
 else
     echo "Cannot find directory $PSDIR"
     exit 1;
