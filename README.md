@@ -8,4 +8,6 @@ Automate PrestaShop installation.
 3. other standard binutils like mv, xargs, rm
 
 # Example
-$ ./psinit.sh psinit.dist
+$ ./psinit 1.6.0.14 psinit.dist
+or
+$ ./psinit 1.6.0.14
