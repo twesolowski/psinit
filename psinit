@@ -1,22 +1,28 @@
 #! /bin/bash
-PSVERSION="1.6.1.4"
+PSVERSION=$1
 ZIPFILE=prestashop_$PSVERSION.zip
 ZIPURL=https://www.prestashop.com/download/old/$ZIPFILE
 PSDIR="prestashop"
 CONFFILE_DEFAULT="psinit"
 
 
-if [ -z "$1" ];  then
-    echo "No argument supplied, trying psinit"
+if [ -z "$PSVERSION" ];  then
+    echo "No argument for PS Version supplied, trying local psinit"
+    exit 1;
+fi
+
+if [ -z "$2" ];  then
+    echo "No argument for config file supplied, trying local psinit"
     
     if [ -f $CONFFILE_DEFAULT ]; then
+        echo "using $CONFFILE_DEFAULT"
         CONFFILE=$CONFFILE_DEFAULT
     else
        echo "Specify config file"
        exit 1;
     fi
 else
-    $CONFFILE="$1"
+    $CONFFILE="$"
 fi
 
 echo "Dowloading $ZIPFILE"
