@@ -56,5 +56,5 @@ cat $CONFFILE | xargs  php ./install/index_cli.php
 echo "Clearing"
 rm -fr ./$PSDIR
 rm -fr ./install
+mv ./admin ./administration
 rm -f $ZIPFILE
-
